@@ -35,6 +35,7 @@ docker --context=default buildx build \
   --label "maintainer=rwillians" \
   --label "org.opencontainers.image.source=https://github.com/grua-io/maintenance-in-progress" \
   --label "org.opencontainers.image.revision=${COMMIT_SHA}" \
+  --label "org.opencontainers.image.licenses=MIT" \
   --builder default \
   --platform linux/arm64 \
   --push .
@@ -44,6 +45,7 @@ docker --context=default buildx build \
   --label "maintainer=rwillians" \
   --label "org.opencontainers.image.source=https://github.com/grua-io/maintenance-in-progress" \
   --label "org.opencontainers.image.revision=${COMMIT_SHA}" \
+  --label "org.opencontainers.image.licenses=MIT" \
   --builder default \
   --platform linux/amd64 \
   --push .
